@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="23dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCartPhoneImage"
+            android:layout_width="89dp"
+            android:layout_height="89dp"
+            android:layout_margin="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCartProductName"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/mark_pro"
+            android:layout_marginStart="23dp"
+            android:textAppearance="@style/cart_phone_name"
+            app:layout_constraintStart_toEndOf="@+id/ivCartPhoneImage"
+            app:layout_constraintTop_toTopOf="@+id/ivCartPhoneImage" />
+
+        <TextView
+            android:id="@+id/tvProdValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="$3,000"
+            android:fontFamily="@font/mark_pro"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/card_item_value"
+            app:layout_constraintStart_toStartOf="@+id/tvCartProductName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCartProductName" />
+
+        <LinearLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/counter_shape"
+            android:layout_marginStart="33dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCartPhoneImage"
+            app:layout_constraintStart_toEndOf="@+id/tvCartProductName"
+            app:layout_constraintTop_toTopOf="@+id/ivCartPhoneImage">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:gravity="center"
+                style="@style/counter_style"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                style="@style/counter_style"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:gravity="center"
+                style="@style/counter_style"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/ic_bin"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+            app:layout_constraintStart_toEndOf="@+id/rectangle_2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

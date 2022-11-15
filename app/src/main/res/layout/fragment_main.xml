@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    tools:context="presentation.fragment.MainFragment">
+
+
+    <TextView
+        android:id="@+id/tvZihuatanejo"
+        android:layout_width="119dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="@dimen/margin_21dp"
+        android:text="@string/zihuatanejo"
+        android:fontFamily="@font/mark_pro"
+        android:layout_marginStart="155dp"
+        android:textAppearance="@style/zihuatanejo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="12dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/ic_geo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvZihuatanejo"
+        app:layout_constraintEnd_toStartOf="@+id/tvZihuatanejo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="10dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:src="@drawable/ic_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/tvZihuatanejo"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/ivFilter"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_filter"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvSelectCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:fontFamily="@font/mark_pro"
+        android:gravity="center_horizontal|top"
+        android:text="@string/select_cate"
+        android:layout_marginStart="17dp"
+        android:textAppearance="@style/select_cate"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZihuatanejo" />
+
+    <TextView
+        android:id="@+id/tvSHotSales"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:fontFamily="@font/mark_pro"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/hot_sales"
+        android:textAppearance="@style/select_cate"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productTypeLayout" />
+
+    <TextView
+        android:id="@+id/tvViewAll"
+        android:layout_width="52dp"
+        android:layout_height="19dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/view_all"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/mark_pro"
+        android:textAppearance="@style/view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZihuatanejo" />
+
+    <TextView
+        android:id="@+id/tvSeeMore"
+        android:layout_width="52dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/mark_pro"
+        android:gravity="center_horizontal|top"
+        android:text="@string/see_more"
+        android:textAppearance="@style/view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSHotSales" />
+
+    <LinearLayout
+        android:id="@+id/productTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectCategory">
+
+        <LinearLayout
+            android:id="@+id/layProdPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProdPhone"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/ic_phone"
+                android:padding="19dp"
+                android:background="@drawable/ic_shape_orange"/>
+
+            <TextView
+                android:id="@+id/tvProdPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/mark_pro"
+                android:text="@string/phones"
+                android:textAppearance="@style/phones" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layProdComp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProdComp"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/ic_comp"
+                android:padding="19dp"
+                android:background="@drawable/ic_shape_passive" />
+
+            <TextView
+                android:id="@+id/tvProdComp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/mark_pro"
+                android:textColor="@color/black"
+                android:text="@string/computer"
+                android:textAppearance="@style/phones" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layProdHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProdHealth"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/ic_healt"
+                android:padding="19dp"
+                android:background="@drawable/ic_shape_passive"/>
+
+            <TextView
+                android:id="@+id/tvProdHealt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/mark_pro"
+                android:textColor="@color/black"
+                android:text="@string/healt"
+                android:textAppearance="@style/phones" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layProdBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProdBooks"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/ic_books"
+                android:padding="19dp"
+                android:background="@drawable/ic_shape_passive"/>
+
+            <TextView
+                android:id="@+id/tvProdBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/mark_pro"
+                android:textColor="@color/black"
+                android:text="@string/books"
+                android:textAppearance="@style/phones" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@drawable/layout_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSHotSales">
+
+        <ImageView
+            android:id="@+id/ivSalePhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPhone"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_shape_orange"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_new"
+            android:textAppearance="@style/style_new"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPhone"
+            app:layout_constraintEnd_toEndOf="@+id/ivPhone"
+            app:layout_constraintStart_toStartOf="@+id/ivPhone"
+            app:layout_constraintTop_toTopOf="@+id/ivPhone" />
+
+        <TextView
+            android:id="@+id/tvPhoneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/iphone_12"
+            android:textAppearance="@style/iphone_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/buyNowBtn"
+            android:layout_width="98dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitlePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@style/s_per_mega_"
+            app:layout_constraintStart_toStartOf="@+id/tvPhoneName"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneName" />
+
+        <TextView
+            android:id="@+id/buy_now_"
+            android:layout_width="44dp"
+            android:layout_height="13dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/buy_now_"
+            android:textAppearance="@style/buy_now_"
+            app:layout_constraintBottom_toBottomOf="@+id/buyNowBtn"
+            app:layout_constraintEnd_toEndOf="@+id/buyNowBtn"
+            app:layout_constraintStart_toStartOf="@+id/buyNowBtn"
+            app:layout_constraintTop_toTopOf="@+id/buyNowBtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/layFilter"
+        layout="@layout/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/itemLayout"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPhones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/primary_background"
+        app:layout_constraintTop_toBottomOf="@+id/layFilter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_phone_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

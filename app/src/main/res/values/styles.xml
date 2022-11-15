@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonStyle">
+        <item name="android:background">@color/primary_background</item>
+    </style>
+
+
+    <style name="buy_now_">
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="style_new">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="iphone_12">
+        <item name="android:textSize">25sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="s_per_mega_">
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <style name="some_id">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#010035</item>
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="value">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+
+    <style name="samsung_gal">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="product_det">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="galaxy_note">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="shop">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="exynos_990">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#B7B7B7
+        </item>
+    </style>
+
+    <style name="select_colo">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="gb">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="add_to_cart">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="zihuatanejo">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="select_cate">
+        <item name="android:textSize">25sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="view_all">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FF6E4E</item>
+    </style>
+
+    <style name="phones">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FF6E4E</item>
+    </style>
+
+    <style name="count">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="my_cart">
+        <item name="android:textSize">35sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#010035</item>
+    </style>
+
+    <style name="total">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="us">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="cart_phone_name">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="card_item_value">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FF6E4E</item>
+    </style>
+
+    <style name="counter_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

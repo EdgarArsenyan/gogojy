@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="presentation.fragment.MyCardFragment">
+
+    <ImageView
+        android:id="@+id/ivBackFromPCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        android:src="@drawable/ic_bac_tint"
+        android:padding="10dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddAddress"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:text="@string/add_address"
+        android:textAppearance="@style/zihuatanejo"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/mark_pro"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAddress"
+        app:layout_constraintEnd_toStartOf="@+id/ivAddress"
+        app:layout_constraintTop_toTopOf="@+id/ivAddress" />
+
+    <ImageView
+        android:id="@+id/ivAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/ic_basket"
+        android:padding="10dp"
+        android:src="@drawable/ic_geo"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackFromPCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBackFromPCard"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/my_cart"
+        android:layout_width="138dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/my_cart"
+        android:fontFamily="@font/mark_pro"
+        android:textAppearance="@style/my_cart"
+        app:layout_constraintStart_toStartOf="@+id/ivBackFromPCard"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackFromPCard" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="49dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="@dimen/margin_0dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_cart">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMyCards"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0dp"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_my_cart_layout" />
+
+            <TextView
+                android:id="@+id/tvUs"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:fontFamily="@font/mark_pro"
+                android:text="$6,000 us"
+                android:textStyle="bold"
+                android:layout_marginEnd="35dp"
+                android:textAppearance="@style/us"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTotal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTotal" />
+
+            <TextView
+                android:id="@+id/tvFree"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:fontFamily="@font/mark_pro"
+                android:text="Free"
+                android:textAppearance="@style/us"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDelivery"
+                app:layout_constraintStart_toStartOf="@+id/tvUs"
+                app:layout_constraintTop_toTopOf="@+id/tvDelivery" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="36dp"
+                android:layout_height="19dp"
+                android:fontFamily="@font/mark_pro"
+                android:layout_marginBottom="@dimen/margin_12dp"
+                android:text="@string/total"
+                android:textAppearance="@style/total"
+                app:layout_constraintBottom_toTopOf="@+id/tvDelivery"
+                app:layout_constraintStart_toStartOf="@+id/tvDelivery" />
+
+            <TextView
+                android:id="@+id/tvDelivery"
+                android:layout_width="36dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="55dp"
+                android:fontFamily="@font/mark_pro"
+                android:layout_marginBottom="26dp"
+                android:text="@string/delivery"
+                android:textAppearance="@style/total"
+                app:layout_constraintBottom_toTopOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/margin_4dp"
+                android:layout_marginBottom="27dp"
+                android:background="@color/white_20_percent"
+                app:layout_constraintBottom_toTopOf="@+id/ivCheckout"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="@dimen/margin_4dp"
+                android:background="@color/white_25_percent"
+                app:layout_constraintBottom_toTopOf="@+id/tvTotal"
+                 />
+
+            <ImageView
+                android:id="@+id/ivCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_card_btn_shape"
+                android:paddingHorizontal="44dp"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCheckout"
+                style="@style/add_to_cart"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mark_pro"
+                android:text="@string/checkout"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCheckout"
+                app:layout_constraintEnd_toEndOf="@+id/ivCheckout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivCheckout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

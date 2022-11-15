@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/add_card_btn_shape.xml" value="0.1875" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/button_shape.xml" value="0.21" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/capacity_btn_shape.xml" value="0.1885" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/counter_shape.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ewffsw.xml" value="0.235" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/fav_view_shape.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/filter.xml" value="0.2535" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_bac_tint.xml" value="0.2535" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_back.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_baseline_back.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.235" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_basket.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_chipset.xml" value="0.175" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_comp.xml" value="0.1885" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_healt.xml" value="0.1885" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_phone.xml" value="0.2535" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_shape_orange.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/ic_shape_passive.xml" value="0.1875" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/layout_shape.xml" value="0.1875" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/product_detail_shape.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/samsung_gal.xml" value="0.227" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/drawable/underline.xml" value="0.2655" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/activity_main.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/detail_product_layout.xml" value="0.25" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/erggerg.xml" value="0.34629629629629627" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/filter_layout.xml" value="0.25" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/fragment_main.xml" value="0.2" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/item_my_cart_layout.xml" value="0.22" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/item_phone_layout.xml" value="0.33" />
+        <entry key="..\:/Users/edgar/AndroidStudioProjects/gogojy/app/src/main/res/layout/my_card_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

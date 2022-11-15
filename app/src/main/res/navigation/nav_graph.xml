@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="presentation.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="presentation.fragment.ProductDetailsFragment"
+        android:label="detail_product_layout"
+        tools:layout="@layout/detail_product_layout" >
+        <action
+            android:id="@+id/action_productDetailsFragment_to_myCardFragment"
+            app:destination="@id/myCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCardFragment"
+        android:name="presentation.fragment.MyCardFragment"
+        android:label="my_card_layout"
+        tools:layout="@layout/my_card_layout" />
+
+
+</navigation>
