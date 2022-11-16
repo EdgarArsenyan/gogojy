@@ -10,6 +10,6 @@ interface ApiRepository {
 
     suspend fun getHotSales(): MutableList<HomeStore>
     suspend fun getBestSeller(): MutableList<BestSeller>
-    suspend fun getProduct(): ProductModel
-    suspend fun getMyCardProd(): BasketModel
+    suspend fun getProduct(): ProductModel?
+    suspend fun getMyCardProd(): BasketModel?
 }

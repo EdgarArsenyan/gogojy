@@ -1,6 +1,6 @@
 package com.example.data.data.apiRepo
 
-import com.example.data.data.util.URLConstants
+import com.example.data.data.util.AppConstants
 import domain.model.ProductModel
 import domain.model.ProductModelData
 import domain.model.basket.BasketModel
@@ -12,16 +12,16 @@ import retrofit2.http.GET
 
 interface Api {
 
-    @GET(URLConstants.MAIN_MODEL_URL)
+    @GET(AppConstants.MAIN_MODEL_URL)
     suspend fun getSales(
-    ): Response<MainModel>
+    ): Response<MainModelData>
 
-    @GET(URLConstants.PRODUCT_URL)
+    @GET(AppConstants.PRODUCT_URL)
     suspend fun getProduct(
-    ): Response<ProductModel>
+    ): Response<ProductModelData>
 
-    @GET(URLConstants.MY_CARD_PRODUCTS_URL)
+    @GET(AppConstants.MY_CARD_PRODUCTS_URL)
     suspend fun getMyCardProducts(
-    ): Response<BasketModel>
+    ): Response<BasketModelData>
 
 }

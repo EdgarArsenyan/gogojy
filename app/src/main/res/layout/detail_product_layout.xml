@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="23dp"
         android:layout_marginTop="62dp"
-        android:layout_marginStart="@dimen/margin_130dp"
+        android:layout_marginStart="130dp"
         android:fontFamily="@font/mark_pro"
         android:text="@string/product_det"
         android:textAppearance="@style/product_det"
@@ -62,7 +62,7 @@
         android:layout_height="16dp"
         android:fontFamily="@font/mark_pro"
         android:gravity="center"
-        android:layout_marginBottom="@dimen/margin_2dp"
+        android:layout_marginBottom="2dp"
         android:visibility="gone"
         android:textAppearance="@style/count"
         app:layout_constraintBottom_toBottomOf="@+id/ivCount"
@@ -72,8 +72,8 @@
     <ImageView
         android:id="@+id/ivProduct"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/margin_38dp"
-        android:layout_height="@dimen/margin_349dp"
+        android:layout_marginTop="38dp"
+        android:layout_height="349dp"
         app:layout_constraintTop_toBottomOf="@+id/product_det" />
 
 
@@ -82,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingBottom="27dp"
-        android:layout_marginTop="@dimen/margin_7dp"
+        android:layout_marginTop="7dp"
         app:layout_constraintTop_toBottomOf="@+id/ivProduct"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -90,7 +90,7 @@
             android:id="@+id/productDescLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_28dp"
+            android:layout_marginBottom="28dp"
             android:background="@drawable/product_detail_shape"
             app:layout_constraintTop_toBottomOf="@+id/ivProduct">
 
@@ -98,8 +98,8 @@
                 android:id="@+id/tvProduct"
                 android:layout_width="244dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="@dimen/margin_38dp"
-                android:layout_marginTop="@dimen/margin_28dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="28dp"
                 android:fontFamily="@font/mark_pro"
                 android:textAppearance="@style/galaxy_note"
                 app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
                 android:id="@+id/starGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_7dp"
+                android:layout_marginTop="7dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="@+id/tvProduct"
                 app:layout_constraintTop_toBottomOf="@+id/tvProduct">
@@ -294,10 +294,10 @@
                 android:id="@+id/ivFavView"
                 android:layout_width="37dp"
                 android:layout_height="33dp"
-                android:layout_marginTop="@dimen/margin_28dp"
-                android:layout_marginEnd="@dimen/margin_38dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="38dp"
                 android:background="@drawable/fav_view_shape"
-                android:padding="@dimen/margin_6dp"
+                android:padding="6dp"
                 android:src="@drawable/ic_baseline_favorite_border_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -324,7 +324,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/ic_shape_orange"
                 android:backgroundTint="@android:color/transparent"
-                android:padding="@dimen/margin_10dp"
+                android:padding="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/select_colo" />
 

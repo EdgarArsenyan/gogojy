@@ -2,18 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/margin_12dp"
-    android:layout_marginHorizontal="@dimen/margin_6dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="6dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvProfile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="@dimen/margin_2dp"
-        android:layout_marginTop="@dimen/margin_4dp"
-        app:cardCornerRadius="@dimen/margin_10dp"
-        app:cardElevation="@dimen/margin_0dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
         app:cardPreventCornerOverlap="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="3:4"
@@ -39,13 +39,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/ellipse_8"
+                android:id="@+id/ivFavIcon"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:background="@drawable/ic_favorite_elips"
                 android:elevation="20dp"
                 android:src="@drawable/ic_baseline_favorite_border_24"
-                android:padding="@dimen/margin_4dp"
+                android:padding="4dp"
                 android:layout_margin="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/samsung_gal"
                 app:layout_constraintTop_toTopOf="@+id/samsung_gal" />
@@ -54,7 +54,7 @@
                 android:id="@+id/tvProdValue"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="@dimen/margin_21dp"
+                android:layout_marginStart="21dp"
                 android:textAppearance="@style/some_id"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/samsung_gal" />

@@ -2,7 +2,7 @@ package di
 
 import com.example.data.data.apiRepo.Api
 import com.example.data.data.apiRepo.ApiRepoImpl
-import com.example.data.data.util.URLConstants
+import com.example.data.data.util.AppConstants
 import domain.repo.ApiRepository
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -20,7 +20,7 @@ val dataModule = module {
             Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(get())
-                .baseUrl(URLConstants.BASE_URL)
+                .baseUrl(AppConstants.BASE_URL)
                 .build().create(Api::class.java)
         }
 
@@ -32,7 +32,7 @@ val dataModule = module {
                 Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(get())
-                    .baseUrl(URLConstants.BASE_URL)
+                    .baseUrl(AppConstants.BASE_URL)
                     .build().create(Api::class.java)
             }
         }

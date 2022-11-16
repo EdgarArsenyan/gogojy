@@ -10,7 +10,6 @@ import domain.model.main.BestSellerData
 class PhoneAdapter(private val listener: ItemListener) : RecyclerView.Adapter<PhoneVH>() {
     interface ItemListener {
         fun onClick()
-        fun onLongClick()
     }
 
     private var listOfBestSellers = arrayListOf<BestSeller>()

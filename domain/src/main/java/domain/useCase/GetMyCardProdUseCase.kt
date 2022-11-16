@@ -7,6 +7,6 @@ import domain.repo.ApiRepository
 
 class GetMyCardProdUseCase(private val apiRepo: ApiRepository){
 
-    suspend fun execute(): BasketModel = apiRepo.getMyCardProd()
+    suspend fun execute(): BasketModel? = apiRepo.getMyCardProd()
 
 }

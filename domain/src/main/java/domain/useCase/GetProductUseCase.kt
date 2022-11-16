@@ -5,6 +5,6 @@ import domain.repo.ApiRepository
 
 class GetProductUseCase (private val apiRepo: ApiRepository) {
 
-    suspend fun execute(): ProductModel = apiRepo.getProduct()
+    suspend fun execute(): ProductModel? = apiRepo.getProduct()
 
 }

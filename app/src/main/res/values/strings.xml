@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">gogojy</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -34,4 +33,8 @@
     <string name="checkout">Chekout</string>
     <string name="total">Total</string>
     <string name="delivery">Delivery</string>
+    <string name="brand">Brand</string>
+    <string name="price">Price</string>
+    <string name="size">Size</string>
+    <string name="ecommerce_c">Ecommerce \nConcept</string>
 </resources>

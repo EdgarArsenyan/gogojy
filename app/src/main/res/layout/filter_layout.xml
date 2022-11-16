@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/margin_12dp"
+    android:layout_marginBottom="12dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvFilter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="@dimen/margin_2dp"
-        android:layout_marginTop="@dimen/margin_4dp"
-        app:cardCornerRadius="@dimen/margin_10dp"
-        app:cardElevation="@dimen/margin_0dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
         app:cardPreventCornerOverlap="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,14 +23,16 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:layout_marginBottom="44dp"
+            >
 
             <TextView
                 android:id="@+id/tvFilterOptions"
                 android:layout_width="wrap_content"
                 android:layout_height="23dp"
                 android:layout_marginTop="31dp"
-                android:layout_marginStart="@dimen/margin_130dp"
+                android:layout_marginStart="130dp"
                 android:fontFamily="@font/mark_pro"
                 android:text="@string/filter_options"
                 android:textAppearance="@style/product_det"
@@ -69,7 +72,101 @@
                 app:layout_constraintStart_toStartOf="@+id/ivDone"
                 app:layout_constraintTop_toTopOf="@+id/ivDone" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/mark_pro"
+                android:text="@string/brand"
+                android:layout_marginStart="42dp"
+                android:textAppearance="@style/product_det"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivHideFilter" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spBrand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_shape"
+                android:tooltipText="@string/text_new"
+                app:layout_constraintTop_toBottomOf="@+id/tvBrand" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bottom"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spBrand"
+                app:layout_constraintEnd_toEndOf="@+id/spBrand"
+                app:layout_constraintTop_toTopOf="@+id/spBrand" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mark_pro"
+                android:text="@string/price"
+                android:layout_marginTop="15dp"
+                android:textAppearance="@style/product_det"
+                app:layout_constraintStart_toStartOf="@+id/tvBrand"
+                app:layout_constraintTop_toBottomOf="@+id/spBrand" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spPrice"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_shape"
+                android:tooltipText="@string/text_new"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bottom"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spPrice"
+                app:layout_constraintEnd_toEndOf="@+id/spPrice"
+                app:layout_constraintTop_toTopOf="@+id/spPrice" />
+
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mark_pro"
+                android:text="@string/size"
+                android:layout_marginTop="15dp"
+                android:textAppearance="@style/product_det"
+                app:layout_constraintStart_toStartOf="@+id/tvBrand"
+                app:layout_constraintTop_toBottomOf="@+id/spPrice" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spSize"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_shape"
+                android:tooltipText="@string/text_new"
+                app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bottom"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spSize"
+                app:layout_constraintEnd_toEndOf="@+id/spSize"
+                app:layout_constraintTop_toTopOf="@+id/spSize" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

@@ -13,5 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object{
         var basketCount = 0
+        var isFirstRun = true
+
     }
 }
